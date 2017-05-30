@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+<body>
+
+<script>
+var app = angular.module("myStudentList", []); 
+app.controller("myCtrl", function($scope) {
+    $scope.students = ["Jose Smith", "Amy Chen", "Lorenzo Tenuta"];
+    $scope.addItem = function () {
+        $scope.errortext = "";
+        if (!$scope.addMe) {return;}
+        if ($scope.students.indexOf($scope.addMe) == -1) {
+            $scope.students.push($scope.addMe);
+        } else {
+            $scope.errortext = "The student is already in your student list.";
+        }
+    }
+    $scope.removeItem = function (x) {
+        $scope.errortext = "";    
+        $scope.students.splice(x, 1);
+    }
+});
+</script>
+
+<div ng-app="myStudentList" ng-cloak ng-controller="myCtrl" class="" style="max-width:400px;">
+  <header class="container">
+    <h3>My Student List</h3>
+  </header>
+  <ul class="ul">
+    <li ng-repeat="x in students" class="">{{x}}</li>
+  </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <input placeholder="Write new student names here" ng-model="addMe" class="">
+      </div>
+      <div class="col">
+        <button ng-click="addItem()" class="btn">Add</button>
+      </div>
+    </div>
+    <p class="error-text">{{errortext}}</p>
+  </div>
+</div>
+
+</body>
+</html>
