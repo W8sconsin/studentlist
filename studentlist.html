@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
 <body>
 
 <script>
@@ -29,7 +29,7 @@ app.controller("myCtrl", function($scope) {
     <h3>My Student List</h3>
   </header>
   <ul class="ul">
-    <li ng-repeat="x in students" class="">{{x}}</li>
+    <li ng-repeat="x in students" class="student-name">{{x}}<span ng-click="removeItem($index)">&nbsp &#x78;</span></li>
   </ul>
   <div class="container">
     <div class="row">
