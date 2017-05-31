@@ -1,0 +1,32 @@
+body{
+	font-size: 1.5em;
+}
+input, button{
+	font-size: 1em;
+}
+h3{
+	background-color: powderblue;
+	padding: 1em;
+	margin: 0;
+}
+ul{
+	background-color: #DCDCDC;
+	margin: 0;
+	-webkit-padding-start: 1em;
+	padding: 1em 1em 1em 1em;
+}
+li.student-name{
+	list-style: none;
+	padding: 1em;
+	background-color: white;
+	margin: 0 0 1em 0;
+}
+.input-bar{
+	padding: 1em;
+	text-align:center;
+	background: powderblue;
+}
+button{
+	padding: 1em;
+	margin: 1em;
+}
