@@ -3,6 +3,8 @@ body{
 }
 input, button{
 	font-size: 1em;
+    margin: 1em 0 0 0;
+    padding: 0.5em;
 }
 h3{
 	background-color: powderblue;
@@ -13,7 +15,8 @@ ul{
 	background-color: #DCDCDC;
 	margin: 0;
 	-webkit-padding-start: 1em;
-	padding: 1em 1em 1em 1em;
+	padding: 2em 1em 1em 1em;
+	border-top: 2px solid cadetblue;
 }
 li.student-name{
 	list-style: none;
@@ -25,8 +28,14 @@ li.student-name{
 	padding: 1em;
 	text-align:center;
 	background: powderblue;
+	border-top: 2px solid cadetblue;
 }
 button{
-	padding: 1em;
+	padding: 1em 2em;
 	margin: 1em;
+}
+.delete-student{
+	float: right;
+	color: black;
+	text-transform:capitalize;
 }
