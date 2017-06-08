@@ -58,18 +58,18 @@ button{
 }
 
 /* Rotate first bar */
-.menu-icon-container .change .bar1 {
+.menu-icon-container.change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
     transform: rotate(-45deg) translate(-9px, 6px) ;
 }
 
 /* Fade out the second bar */
-.menu-icon-container .change .bar2 {
+.menu-icon-container.change .bar2 {
     opacity: 0;
 }
 
 /* Rotate last bar */
-.menu-icon-container .change .bar3 {
+.menu-icon-container.change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
