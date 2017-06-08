@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="styles.css">
 <body>
 
 <script>
-var app = angular.module("myStudentList", []); 
+var app = angular.module("myStudentList", []);
 app.controller("myCtrl", function($scope) {
     $scope.students = ["Jose Smith", "Amy Chen", "Lorenzo Tenuta"];
     $scope.addItem = function () {
@@ -18,7 +19,7 @@ app.controller("myCtrl", function($scope) {
         }
     }
     $scope.removeItem = function (x) {
-        $scope.errortext = "";    
+        $scope.errortext = "";
         $scope.students.splice(x, 1);
     }
 });
