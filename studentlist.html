@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="styles.css">
 <body>
 
@@ -22,11 +24,20 @@ app.controller("myCtrl", function($scope) {
         $scope.students.splice(x, 1);
     }
 });
+
+function clickMenu(x) {
+    x.classList.toggle("change");
+}
 </script>
 
-<div ng-app="myStudentList" ng-cloak ng-controller="myCtrl" class="" style="max-width:400px;">
-  <header class="container">
+<div ng-app="myStudentList" ng-cloak ng-controller="myCtrl" class="" style="">
+  <header class="nav-bar container">
     <h3>My Student List</h3>
+    <div class="menu-icon-container" onclick="clickMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
   </header>
   <ul class="ul">
     <li ng-repeat="x in students" class="student-name">{{x}}<span ng-click="removeItem($index)" class="delete-student">&times;</span></li>
