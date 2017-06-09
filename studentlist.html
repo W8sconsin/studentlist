@@ -1,59 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+  
 <body>
 
-<script>
-var app = angular.module("myStudentList", []); 
-app.controller("myCtrl", function($scope) {
-    $scope.students = ["Jose Smith", "Amy Chen", "Lorenzo Tenuta"];
-    $scope.addItem = function () {
+  <script>
+    var app = angular.module("myStudentList", []);
+    app.controller("myCtrl", function($scope) {
+      $scope.students = ["Jose Smith", "Amy Chen", "Lorenzo Tenuta"];
+      $scope.addItem = function() {
         $scope.errortext = "";
-        if (!$scope.addMe) {return;}
-        if ($scope.students.indexOf($scope.addMe) == -1) {
-            $scope.students.push($scope.addMe);
-        } else {
-            $scope.errortext = "The student is already in your student list.";
+        if (!$scope.addMe) {
+          return;
         }
-    }
-    $scope.removeItem = function (x) {
-        $scope.errortext = "";    
+        if ($scope.students.indexOf($scope.addMe) == -1) {
+          $scope.students.push($scope.addMe);
+        } else {
+          $scope.errortext = "The student is already in your student list.";
+        }
+      }
+      $scope.removeItem = function(x) {
+        $scope.errortext = "";
         $scope.students.splice(x, 1);
+      }
+    });
+
+    function clickMenu(x) {
+      x.classList.toggle("change");
     }
-});
+  </script>
 
-function clickMenu(x) {
-    x.classList.toggle("change");
-}
-</script>
-
-<div ng-app="myStudentList" ng-cloak ng-controller="myCtrl" class="" style="">
-  <header class="nav-bar container">
-    <h3>My Student List</h3>
-    <div class="menu-icon-container" onclick="clickMenu(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
-  </header>
-  <ul class="ul">
-    <li ng-repeat="x in students" class="student-name">{{x}}<span ng-click="removeItem($index)" class="delete-student">&times;</span></li>
-  </ul>
-  <div class="container">
-    <div class="input-bar row">
-      <div class="col">
-        <input placeholder="Write new student names here" ng-model="addMe" class="">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
       </div>
-      <div class="col">
-        <button ng-click="addItem()" class="btn">Add</button>
+      <div id="myNavbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li id="sortAlpha">Sort Alphabetically</li>
+          <li id="randomize">Randomize</li>
+        </ul>
       </div>
     </div>
-    <p class="error-text">{{errortext}}</p>
+  </nav>
+
+  <div class="container-fluid">
+    <div ng-app="myStudentList" ng-cloak ng-controller="myCtrl" class="" style="">
+      <header class="nav-bar container">
+        <h3>My Student List</h3>
+        <div class="menu-icon-container" onclick="clickMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </header>
+      <ul class="ul">
+        <li ng-repeat="x in students" class="student-name">{{x}}<span ng-click="removeItem($index)" class="delete-student">&times;</span></li>
+      </ul>
+      <div class="container">
+        <div class="input-bar row">
+          <div class="col">
+            <input placeholder="Write new student names here" ng-model="addMe" class="">
+          </div>
+          <div class="col">
+            <button ng-click="addItem()" class="btn">Add</button>
+          </div>
+        </div>
+        <p class="error-text">{{errortext}}</p>
+      </div>
+    </div>
   </div>
-</div>
-
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 </body>
+
 </html>
