@@ -1,9 +1,9 @@
 # Student list
 This open-source project is an AngularJS app that allows you to create and edit a student name list. The vision of this app is that it will allow teachers to rapidly create, manipulate, and student name lists on the fly on their tablet, smartphone, or computer while teaching their classes. 
 
-<div style="text-align:center;">
- <img src="screenshot.png" height="400px" style="display:inline;">
- <img src="menu_mockup.JPG" height="400px" style="display:inline;">
+<div align="center">
+ <img src="screenshot.png" height="500px" style="display:inline;">
+ <img src="menu_mockup.JPG" height="500px" style="display:inline;">
 </div>
 
 ## Invitation to contribute
