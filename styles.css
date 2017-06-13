@@ -2,11 +2,11 @@ body{
 	font-size: 1.5em;
 }
 input, button{
-	font-size: 1em;
+		font-size: 1em;
     margin: 1em 0 0 0;
     padding: 0.5em;
 }
-h3{
+.brand-menu{
 	background-color: powderblue;
 	padding: 1em;
 	margin: 0;
@@ -23,12 +23,6 @@ li.student-name{
 	padding: 1em;
 	background-color: white;
 	margin: 0 0 1em 0;
-}
-.input-bar{
-	padding: 1em;
-	text-align:center;
-	background: powderblue;
-	border-top: 2px solid cadetblue;
 }
 button{
 	padding: 1em 2em;
@@ -72,4 +66,14 @@ button{
 .menu-icon-container.change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
+}
+.row-borders {
+	background-color: powderblue;
+	border: 1px solid black;
+	padding: 1em;
+	margin: 0;
+}
+.add-student {
+	padding: 0px;
+	margin: 0px;
 }
