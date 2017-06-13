@@ -1,79 +1,69 @@
-body{
+body {
 	font-size: 1.5em;
+	padding-top: 55px;
 }
-input, button{
-		font-size: 1em;
-    margin: 1em 0 0 0;
-    padding: 0.5em;
-}
-.brand-menu{
-	background-color: powderblue;
-	padding: 1em;
-	margin: 0;
-}
-ul{
+ul {
 	background-color: #DCDCDC;
 	margin: 0;
 	-webkit-padding-start: 1em;
 	padding: 2em 1em 1em 1em;
 	border-top: 2px solid cadetblue;
 }
-li.student-name{
+li.student-name {
 	list-style: none;
 	padding: 1em;
 	background-color: white;
 	margin: 0 0 1em 0;
 }
-button{
-	padding: 1em 2em;
-	margin: 1em;
-}
-.delete-student{
+.delete-student {
 	float: right;
 	color: black;
 	text-transform:capitalize;
 }
-
-.menu-icon-container {
-    display: inline-block;
-    cursor: pointer;
-    float: right;
-    position: absolute;
-    right: 32px;
-    top: 32px;
-}
-
 .menu-icon-container .bar1, .menu-icon-container .bar2, .menu-icon-container .bar3 {
     width: 35px;
     height: 5px;
     background-color: #333;
     margin: 6px 0;
-    transition: 0.4s;
+    transition: 0.1s;
 }
-
 /* Rotate first bar */
 .menu-icon-container.change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
     transform: rotate(-45deg) translate(-9px, 6px) ;
 }
-
 /* Fade out the second bar */
 .menu-icon-container.change .bar2 {
     opacity: 0;
 }
-
 /* Rotate last bar */
 .menu-icon-container.change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
-.row-borders {
+.nav-style {
 	background-color: powderblue;
-	border: 1px solid black;
+	padding: 20px;
+}
+.drop-down-style {
+	background-color: powderblue;
+	opacity: 0.5;
+}
+.button-position {
+	margin-top: -10px;
+}
+.roster-style {
+	background-color: powderblue;
 	padding: 1em;
-	margin: 0;
+}
+.marg {
+	margin-top: 1em;
 }
 .add-student {
 	padding: 0px;
 	margin: 0px;
+}
+a {
+	background-color: white;
+	border: 7px solid #DCDCDC;
 }
