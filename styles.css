@@ -1,6 +1,6 @@
 body {
 	font-size: 1.5em;
-	padding-top: 55px;
+	padding-top: 79px;
 }
 ul {
 	background-color: #DCDCDC;
@@ -54,7 +54,6 @@ li.student-name {
 }
 .roster-style {
 	background-color: powderblue;
-	padding: 1em;
 }
 .marg {
 	margin-top: 1em;
@@ -66,4 +65,13 @@ li.student-name {
 a {
 	background-color: white;
 	border: 7px solid #DCDCDC;
+}
+.border {
+	border: 1px solid black;
+}
+.btn-pad {
+	padding-bottom: 1em;
+}
+.link-mrg {
+	margin-top: 0.5em;
 }

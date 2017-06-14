@@ -12,8 +12,8 @@
 
 <body>
 
-  <nav class="navbar fixed-top navbar-toggleable-lg navbar-light nav-style">
-    <div class="conatainer">
+  <nav class="navbar fixed-top navbar-light nav-style container">
+    <div class="conatainer-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggler navbar-toggler-right button-position" data-toggle="collapse" data-target="#navbarNavAltMarkup">
         <div class="menu-icon-container" onclick="clickMenu(this)">
@@ -26,26 +26,27 @@
       <div class="navbar-brand" href="#">My Student List</div>
       <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
+          <a class="nav-item nav-link link-mrg" href="#">Create Groups<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Track Participation</a>
+          <a class="nav-item nav-link" href="#">Shuffle List</a>
+          <a class="nav-item nav-link" href="#">Alphabetize List</a>
+          <a class="nav-item nav-link" href="#">Delete List</a>
+          <a class="nav-item nav-link" href="#">More Options</a>
         </div>
       </div>
     </div>
   </nav>
 
   <div class="container-fluid">
-    <div class="roster-style" ng-app="myStudentList" ng-cloak ng-controller="myCtrl">
-      <ul class="ul">
+    <div class="roster-style container btn-pad" ng-app="myStudentList" ng-cloak ng-controller="myCtrl">
+      <ul class="ul container">
         <li ng-repeat="x in students" class="student-name">{{x}}<span ng-click="removeItem($index)" class="delete-student">&times;</span></li>
       </ul>
-      <div class="row">
-        <div class="col-sm-12 text-center marg">
-          <input placeholder="Write new student names here" ng-model="addMe">
-        </div>
-        <div class="col-sm-12 text-center marg">
-          <button ng-click="addItem()" class="btn">Add</button>
-        </div>
+      <div class="text-center marg">
+        <input placeholder="Write new student names here" ng-model="addMe">
+      </div>
+      <div class="text-center marg">
+        <button ng-click="addItem()" class="btn">Add</button>
       </div>
       <p class="error-text">{{errortext}}</p>
     </div>
