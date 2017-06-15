@@ -15,7 +15,7 @@
   <nav class="navbar fixed-top navbar-light nav-style container">
     <div class="conatainer-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggler navbar-toggler-right button-position" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+        <button id="menuBtn" onclick="clickCount()" type="button" class=" navbar-toggler navbar-toggler-right button-position" data-toggle="collapse" data-target="#navbarNavAltMarkup">
         <div class="menu-icon-container" onclick="clickMenu(this)">
           <div class="bar1"></div>
           <div class="bar2"></div>
@@ -26,33 +26,35 @@
       <div class="navbar-brand" href="#">My Student List</div>
       <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link link-mrg" href="#">Create Groups<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Track Participation</a>
-          <a class="nav-item nav-link" href="#">Shuffle List</a>
-          <a class="nav-item nav-link" href="#">Alphabetize List</a>
-          <a class="nav-item nav-link" href="#">Delete List</a>
-          <a class="nav-item nav-link" href="#">More Options</a>
+          <a class="nav-item nav-link top-space" href="#"><span class="left-pad">Create Groups</span><span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#"><span class="left-pad">Shuffle List</span></a>
+          <a class="nav-item nav-link" href="#"><span class="left-pad">Track Participation</span></a>
+          <a class="nav-item nav-link" href="#"><span class="left-pad">Alphabetize List</span></a>
+          <a class="nav-item nav-link" href="#"><span class="left-pad">Delete List</span></a>
+          <a class="nav-item nav-link" href="#"><span class="left-pad">More Options</span></a>
         </div>
       </div>
     </div>
   </nav>
 
   <div class="container-fluid">
-    <div class="roster-style container btn-pad" ng-app="myStudentList" ng-cloak ng-controller="myCtrl">
-      <ul class="ul container">
-        <li ng-repeat="x in students" class="student-name">{{x}}<span ng-click="removeItem($index)" class="delete-student">&times;</span></li>
-      </ul>
-      <div class="text-center marg">
-        <input placeholder="Write new student names here" ng-model="addMe">
+    <div id="modal">
+      <div class="roster-style container btn-pad gray-out" ng-app="myStudentList" ng-cloak ng-controller="myCtrl">
+        <ul class="ul container">
+          <li ng-repeat="x in students" class="student-name">{{x}}<span ng-click="removeItem($index)" class="delete-student">&times;</span></li>
+        </ul>
+        <div class="text-center marg">
+          <input placeholder="Write new student names here" ng-model="addMe">
+        </div>
+        <div class="text-center marg">
+          <button ng-click="addItem()" class="btn">Add</button>
+        </div>
+        <p class="error-text">{{errortext}}</p>
       </div>
-      <div class="text-center marg">
-        <button ng-click="addItem()" class="btn">Add</button>
-      </div>
-      <p class="error-text">{{errortext}}</p>
     </div>
   </div>
 
-  <script type="text/javascript" src="navbar.js"></script>
+  <script type="text/javascript" src="modal.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 </body>
 
