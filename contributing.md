@@ -4,10 +4,10 @@
 <p>This project has several contributors.  We are going to probably have to experiment to get our workflow right.  This is the plan for this month. (We’ll review it’s pros and cons after one month, and either make changes, leave it as is, or scrap it.)</p>
 
 ## Branches
-<p>Our new branch structure will consist of 3 branches
-•	Dev
-•	Demo
-•	Master</p>
+<p>Our new branch structure will consist of 3 branches:</p>
+<p>•	Dev</p>
+<p>•	Demo</p>
+<p>•	Master</p>
 
 ## Dev Branch
 <p>All developers will be committing code to the Dev branch only.  This means that you need to try to work with the latest code.  This is called “getting the latest”.  Developers should communicate with one another both on Github through comments and via Trello and Google Hangouts.</p>
