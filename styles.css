@@ -73,3 +73,13 @@ button{
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
+
+/*adding for shadow effect*/
+.student-name {
+-webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+} 
+
+
+  

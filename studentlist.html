@@ -33,7 +33,7 @@
       x.classList.toggle("change");
     }
   </script>
-
+  
   <div class="container-fluid">
     <div ng-app="myStudentList" ng-cloak ng-controller="myCtrl" class="" style="">
       <header class="nav-bar container">
@@ -44,9 +44,11 @@
           <div class="bar3"></div>
         </div>
       </header>
+      
       <ul class="ul">
         <li ng-repeat="x in students" class="student-name">{{x}}<span ng-click="removeItem($index)" class="delete-student">&times;</span></li>
       </ul>
+
       <div class="container">
         <div class="input-bar row">
           <div class="col">
