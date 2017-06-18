@@ -21,6 +21,9 @@
 ### The branch for the public
 <p>Our deployable code.</p>
 
+## How do I get feedback?
+Use the "Commits" tab.  Request feedback using a comment with @username_of_person_for_feedback.  Request more than one person's feedback. Pull requests will be used when we're reviewing code from the whole dev cycle.  This process will be reviewed after our first cycle to see if we like it or if it should change.
+
 ## 4-Week Dev Cycle for Front-End Development 
 <p>Day 1: All-contributor meeting, user stories & mockups released</p>
 <p>Days 1 & 2: Developers divide up work, communicate with each other</p>
