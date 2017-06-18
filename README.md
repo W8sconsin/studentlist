@@ -5,7 +5,7 @@ This open-source project is an AngularJS app that allows you to create and edit 
  <img src="liesl-logo.jpg" height="300px" style="display:inline;">
  <img src="screenshot.png" height="300px" style="display:inline;">
  <img src="menu_mockup.JPG" height="300px" style="display:inline;">
- <img src="IMG_1888.JPG" height="300px" style="display:inline;">
+ <img src="list_manager.JPG" height="300px" style="display:inline;">
 </div>
 
 ## Invitation to contribute
