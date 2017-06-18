@@ -22,7 +22,10 @@
 <p>Our deployable code.</p>
 
 ## How do I get feedback?
-Use the "Commits" tab.  Request feedback using a comment with @username_of_person_for_feedback.  Request more than one person's feedback. Pull requests will be used when we're reviewing code from the whole dev cycle.  This process will be reviewed after our first cycle to see if we like it or if it should change.
+### Method 1:
+Use the "Commits" tab.  Request feedback using a comment with @username_of_person_for_feedback.  Request more than one person's feedback. 
+### Method 2:
+Do a pull request from your local "dev" branch to the w8sconsin "dev" branch.  Do not do a pull request to the "master" or the "demo" branches.  Do not approve a request like that if it comes in.  The reason is that we some space between what is in the master - theoretical our deployable code - and our messier, changing dev space.
 
 ## 4-Week Dev Cycle for Front-End Development 
 <p>Day 1: All-contributor meeting, user stories & mockups released</p>
