@@ -1,4 +1,4 @@
-# liESL - Create interactive students lists for your classes
+<h2 style="text-align: center;">liESL - Create interactive students lists for your classes</h1>
 #### (liESL is pronounced "lee-zil" like the woman's name and is short for "list ESL")
 This open-source project is an AngularJS app that allows you to create and edit a student name list. The vision of this app is that it will allow teachers to rapidly create, manipulate, and student name lists on the fly on their tablet, smartphone, or computer while teaching their classes. 
 
