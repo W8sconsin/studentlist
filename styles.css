@@ -1,90 +1,120 @@
-body {
-	font-size: 1.5em;
-	padding-top: 79px;
+html{
+	background: powderblue;
 }
-ul {
+body{
+	font-size: 1.5em;
+}
+input, button{
+	font-size: 1em;
+    margin: 1em 0 0 0;
+    padding: 0.5em;
+}
+h3{
+	background-color: powderblue;
+	padding: 1em;
+	margin: 0;
+}
+.nav-bar h3 {
+	margin: 0;
+}
+ul.student-name{
 	background-color: #DCDCDC;
 	margin: 0;
 	-webkit-padding-start: 1em;
 	padding: 2em 1em 1em 1em;
 	border-top: 2px solid cadetblue;
-	border-bottom: 2px solid cadetblue;
 }
-li.student-name {
+ul.dropdown.menu{
+	display: none;
+	position: absolute;
+	background: powderblue;
+	right: 0;
+	-webkit-padding-start: 0;
+	width: 100%;
+	border-top: 2px solid cadetblue;
+	border-bottom: 2px solid cadetblue;
+	-webkit-box-shadow: 1px 2px 20px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 1px 2px 20px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, .5);
+}
+ul.dropdown.menu li{
+	list-style: none;
+	padding: 1em;
+    background-color: white;
+    margin: 1em;
+}
+ul.dropdown.menu li:hover {
+    background: #F5F5F5;
+}
+ul.dropdown.menu a li{
+	color: black;
+}
+li.student-name{
 	list-style: none;
 	padding: 1em;
 	background-color: white;
 	margin: 0 0 1em 0;
 }
-.delete-student {
+.input-bar{
+	padding: 1em;
+	text-align:center;
+	background: powderblue;
+	border-top: 2px solid cadetblue;
+}
+.input-bar .col{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+button{
+	padding: 1em 2em;
+	margin: 1em;
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+.delete-student{
 	float: right;
 	color: black;
 	text-transform:capitalize;
 }
+
+.menu-icon-container {
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    right: 32px;
+    top: 18px;
+}
+
 .menu-icon-container .bar1, .menu-icon-container .bar2, .menu-icon-container .bar3 {
     width: 35px;
     height: 5px;
     background-color: #333;
     margin: 6px 0;
-    transition: 0.1s;
+    transition: 0.4s;
 }
+
 /* Rotate first bar */
 .menu-icon-container.change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
     transform: rotate(-45deg) translate(-9px, 6px) ;
 }
+
 /* Fade out the second bar */
 .menu-icon-container.change .bar2 {
     opacity: 0;
 }
+
 /* Rotate last bar */
 .menu-icon-container.change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
-.nav-style {
-	background-color: powderblue;
-	padding: 20px;
-}
-.drop-down-style {
-	background-color: powderblue;
-	opacity: 0.5;
-}
-.button-position {
-	margin-top: -10px;
-}
-.roster-style {
-	background-color: powderblue;
-}
-.marg {
-	margin-top: 1em;
-}
-.add-student {
-	padding: 0px;
-	margin: 0px;
-}
-a {
-	background-color: white;
-	border: .5em solid #DCDCDC;
-}
-.border {
-	border: 1px solid black;
-}
-.btn-pad {
-	padding-bottom: 1em;
-}
-.top-space {
-	margin-top: 0.5em;
-}
-.left-pad {
-	padding-left: 0.5em;
-}
-button:focus {
-  outline: none;
-}
-/*adding for shadow effect*/
+
+/* Shadow effect */
 .student-name {
 -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-} 
+}
