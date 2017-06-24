@@ -80,7 +80,9 @@ button{
 	color: black;
 	text-transform:capitalize;
 }
-
+.delete-student:hover{
+	cursor:pointer;
+}
 .menu-icon-container {
     display: inline-block;
     cursor: pointer;
