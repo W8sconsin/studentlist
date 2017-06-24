@@ -128,17 +128,23 @@ box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
-	
+	ul.dropdown.menu{
+		width: 80%;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-	
+	ul.dropdown.menu{
+		width: 60%;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
-	
+	ul.dropdown.menu{
+		width: 50%;
+	}
 }
 
 /* Large Devices, Wide Screens */
