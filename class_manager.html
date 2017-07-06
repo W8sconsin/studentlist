@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/functions.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+      <div ng-app="myStudentList" class="" style="">
+        <header class="nav-bar">
+          <h3>Your List</h3>
+        <div class="menu-icon-container" input type="button" onclick="location.href='student_list.html'">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </header>
+  
+        <ul class="class-list" ng-controller="myList">
+          <li ng-repeat="x in classes" class="class-list">{{x}}
+    
+            <span class ="open-item"> 
+              <a class ="open-box" href="#" role="button">OPEN</a>
+            </span>
+                  
+          <ul ng-controller="numberOf" class="textToLeft">    
+            <li class= "number-list"># of students
+            </li>
+          </ul>
+          </li>
+        </div>
+        </ul>  
+    </body>
+  </html>

@@ -16,3 +16,15 @@ app.controller("myCtrl", function($scope) {
         $scope.students.splice(x, 1);
     }
 });
+
+/*adding controller for myList of classes*/ 
+app.controller("myList", function($scope) {
+    $scope.classes = ["Poetry", "American Lit", "ESL 102", "Linguistics"];
+   
+});
+/*adding controller for #of students //(currently not working)*/
+app.controller("numberOf", function($scope) {
+    $scope.size = ["12 students", "20 students", "15 students", 
+    "17 students"];
+
+});
