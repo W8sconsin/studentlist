@@ -118,6 +118,53 @@ button{
 -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
+/*class-list style*/
+ul.class-list{
+	background-color: #DCDCDC;
+	margin: 0;
+	-webkit-padding-start: 1em;
+	padding: 2em 1em 1em 1em;
+	border-top: 2px solid cadetblue;
+}
+/*adding border around activated with hover*/
+li.class-list.Hover { border: 3px solid #00ebeb;}
+
+/*adding with above for class list to style*/
+li.class-list{
+	list-style: none;
+	padding: 1.5em;
+	background-color: white;
+	margin: 0 0 1em 0;
+}
+/*for numberOf*/
+li.number-list {
+	list-style: none;
+	padding: 1em;
+}
+/*add to get text of # of students to left */
+ul.textToLeft {
+	text-align: left;	
+	margin-left: -4em;
+}
+/*For OPEN at right*/
+.open-box {
+    float: right;
+    list-style: none;
+    text-align: center;
+    background-color: #00ebeb;
+    width: 15%;
+    line-height: 100px; 
+    height: 113px;
+    overflow: none;
+    color: black;
+    margin-top: -1.6%;
+    margin-right: -1.6%;
+    text-decoration: none;
+  }
+/*adding to hide open box and make visible with hover over*/
+ul li span.open-item {display: none;}
+ul li:hover span.open-item {display: inline;}
+
 
 /*============ Mobile Queries First ============*/
 
