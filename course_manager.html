@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/functions.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+
+    <div ng-app="myStudentList" ng-cloak ng-controller="courseManagerCtrl" class="" style="">
+      <header class="nav-bar">
+        <h3>Course Manager</h3>
+        <div class="menu-icon-container" onclick="location.href='student_list.html'">
+          <i class="fa fa-home fa-4x" aria-hidden="true"></i>
+        </div>
+      </header>
+      <ul ng-repeat="record in records" class="course-name">
+        <li class="course-name">{{record.CourseName}}</li>
+        <li class="number-students">{{record.NumberStudents}} students in this course</li>
+      </ul>
+      <div class="">
+        <div class="input-bar row">
+          <div class="col">
+            <button ng-click="openCourse()" class="btn btn-lg open-button">Open</button>
+          </div>
+        </div>
+        <p class="error-text">{{errortext}}</p>
+      </div>
+    </div>
+
+  </body>
+</html>
