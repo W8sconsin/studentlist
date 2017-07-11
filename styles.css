@@ -17,7 +17,7 @@ h3{
 .nav-bar h3 {
 	margin: 0;
 }
-ul.student-name{
+ul.student-name, ul.course-name{
 	background-color: #DCDCDC;
 	margin: 0;
 	-webkit-padding-start: 1em;
@@ -55,6 +55,18 @@ li.student-name{
 	background-color: white;
 	margin: 0 0 1em 0;
 }
+li.course-name{
+	list-style: none;
+	padding: 1em;
+	background-color: white;
+	margin:0;
+ }
+ li.number-students{
+ 	list-style: none;
+    padding: 0 1em 1em 1em;
+    background-color: white;
+    margin: 0 0 1em 0;
+ }
 .input-bar{
 	padding: 1em;
 	text-align:center;
@@ -71,6 +83,9 @@ button{
     -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
     -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+.open-button{
+	background-color: #94f9e9;
 }
 .delete-student{
 	float: right;
