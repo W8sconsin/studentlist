@@ -75,7 +75,6 @@ app.controller("myCtrl", function($scope) {
 
   }
 });
-});
 
 app.controller("courseManagerCtrl", function($scope) {
         $scope.records = [
