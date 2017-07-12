@@ -1,4 +1,5 @@
-var app = angular.module("myStudentList", []);
+var app = angular.module("myStudentList", []); 
+
 app.controller("myCtrl", function($scope) {
   $scope.students = ["Jose Smith", "Amy Chen", "Lorenzo Tenuta"];
   $scope.addItem = function() {
@@ -11,6 +12,7 @@ app.controller("myCtrl", function($scope) {
     } else {
       $scope.errortext = "The student is already in your student list.";
     }
+
   }
   $scope.removeItem = function(x) {
     $scope.errortext = "";
@@ -37,4 +39,23 @@ app.controller("myCtrl", function($scope) {
 
     return $scope.students;
   }
+});
+});
+
+app.controller("courseManagerCtrl", function($scope) {
+        $scope.records = [
+       {
+            "CourseName" : "Geography 101",
+            "NumberStudents" : 10
+        },{
+            "CourseName" : "Math 202",
+            "NumberStudents" : 15
+        },{
+            "CourseName" : "Philosophy",
+            "NumberStudents" : 16
+        },{
+            "CourseName" : "Italian 302",
+            "NumberStudents" : 21
+        }
+    ]
 });
